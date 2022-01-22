@@ -1,5 +1,28 @@
 apiVersion: v1
 entries:
+  keycloak:
+  - apiVersion: v2
+    appVersion: 16.1.0
+    created: "2022-01-22T21:27:23.340733898Z"
+    description: Open Source Identity and Access Management For Modern Applications
+      and Services
+    digest: c98f17b9880c195a7f6f3e68d63264dabf8d975e12c046ee3ab485b73c9d4c4c
+    home: https://www.keycloak.org/
+    icon: https://www.keycloak.org/resources/images/keycloak_logo_480x108.png
+    keywords:
+    - sso
+    - idm
+    - openid connect
+    - saml
+    - kerberos
+    - ldap
+    maintainers:
+    - email: fpo@felipeweb.dev
+      name: felipeweb
+    name: keycloak
+    urls:
+    - https://github.com/funccloud/helm-charts/releases/download/keycloak-16.1.0/keycloak-16.1.0.tgz
+    version: 16.1.0
   keycloak-operator:
   - apiVersion: v2
     appVersion: 16.1.0
@@ -21,4 +44,4 @@ entries:
     urls:
     - https://github.com/funccloud/helm-charts/releases/download/keycloak-operator-0.1.0/keycloak-operator-0.1.0.tgz
     version: 0.1.0
-generated: "2022-01-22T18:45:01.775293587Z"
+generated: "2022-01-22T21:27:23.340953209Z"
