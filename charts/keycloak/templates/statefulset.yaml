@@ -34,7 +34,7 @@ spec:
         {{- end }}
       labels:
         {{- include "keycloak.selectorLabels" . | nindent 8 }}
-        {{- if and .Values.postgresql.enabled (and .Values.postgresql.networkPolicy .Values.postgresql.networkPolicy.enabled) }}
+        {{- if and .Values.postgresql.enabled }}
         {{ include "keycloak.postgresql.fullname" . }}-client: "true"
         {{- end }}
         {{- range $key, $value := .Values.podLabels }}
