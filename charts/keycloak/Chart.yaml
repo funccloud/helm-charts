@@ -16,8 +16,3 @@ icon: https://www.keycloak.org/resources/images/keycloak_logo_480x108.png
 maintainers:
   - name: felipeweb
     email: fpo@felipeweb.dev
-dependencies:
-  - name: postgresql
-    version: 14.0.0
-    repository: https://charts.bitnami.com/bitnami
-    condition: postgresql.enabled
