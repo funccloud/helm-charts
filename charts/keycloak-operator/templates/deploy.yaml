@@ -24,7 +24,7 @@ spec:
           - keycloak-operator
           {{- with .Values.resources }}
           resources:
-          {{- toYaml . | nindent 10 }}
+          {{- toYaml . | nindent 11 }}
           {{- end }}
           env:
             {{ if .Values.runInClusterScope -}}
