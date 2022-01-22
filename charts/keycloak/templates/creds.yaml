@@ -4,5 +4,5 @@ kind: Secret
 metadata:
   name: postgres-creds
 data:
-  password: {{.Values.postgresql.password}}
+  password: {{.Values.postgresql.password | b64enc}}
 
