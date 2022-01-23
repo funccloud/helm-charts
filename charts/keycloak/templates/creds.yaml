@@ -5,4 +5,5 @@ metadata:
   name: postgres-creds
 data:
   password: {{.Values.postgresql.password | b64enc}}
+  admin-password: {{.Values.admin.password | b64enc}}
 

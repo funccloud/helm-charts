@@ -84,6 +84,15 @@ spec:
           {{- tpl . $ | nindent 12 }}
           {{- end }}
           env:
+            - name: KEYCLOAK_USER
+              value: {{ .Values.admin.user | quote }}
+            - name: KEYCLOAK_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: postgres-creds
+                  key: admin-password
+            - name: DB_VENDOR
+              value: postgres
             - name: DB_VENDOR
               value: postgres
             - name: DB_SCHEMA
