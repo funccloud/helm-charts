@@ -7,6 +7,8 @@ nameOverride: ""
 # The number of replicas to create (has no effect if autoscaling enabled)
 replicas: 1
 
+admin: {}
+
 image:
   # The Keycloak image repository
   repository: docker.io/jboss/keycloak
