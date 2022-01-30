@@ -3,6 +3,16 @@ entries:
   cert-manager-config:
   - apiVersion: v2
     appVersion: 0.1.0
+    created: "2022-01-30T17:15:37.427309088Z"
+    description: A cert-manager-configurator
+    digest: c9d37d7f188f47b67bced96d03f85ad85c3cbe4e37bf7baf7c09faf6ccbb8bf9
+    name: cert-manager-config
+    type: application
+    urls:
+    - https://github.com/funccloud/helm-charts/releases/download/cert-manager-config-0.1.3/cert-manager-config-0.1.3.tgz
+    version: 0.1.3
+  - apiVersion: v2
+    appVersion: 0.1.0
     created: "2022-01-30T14:42:57.178693919Z"
     description: A cert-manager-configurator
     digest: 87a4bbd4093ce5942e008faf66470782d089a716eaea803ee95128ed58533576
@@ -185,4 +195,4 @@ entries:
     urls:
     - https://github.com/funccloud/helm-charts/releases/download/keycloak-operator-0.1.0/keycloak-operator-0.1.0.tgz
     version: 0.1.0
-generated: "2022-01-30T14:42:57.17872562Z"
+generated: "2022-01-30T17:15:37.427338189Z"
