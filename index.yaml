@@ -195,4 +195,26 @@ entries:
     urls:
     - https://github.com/funccloud/helm-charts/releases/download/keycloak-operator-0.1.0/keycloak-operator-0.1.0.tgz
     version: 0.1.0
-generated: "2022-01-30T17:15:37.427338189Z"
+  kong:
+  - apiVersion: v1
+    appVersion: "2.7"
+    created: "2022-02-07T20:58:03.89488405Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: ""
+      version: 8.6.8
+    description: The Cloud-Native Ingress and API-management
+    digest: a66dce8759b42295ca6f28a97e569365cfdb6af9f913b194ba22fe8da65f94b0
+    home: https://konghq.com/
+    icon: https://s3.amazonaws.com/downloads.kong/universe/assets/icon-kong-inc-large.png
+    maintainers:
+    - email: harry@konghq.com
+      name: hbagdi
+    - email: traines@konghq.com
+      name: rainest
+    name: kong
+    urls:
+    - https://github.com/funccloud/helm-charts/releases/download/kong-2.6.4/kong-2.6.4.tgz
+    version: 2.6.4
+generated: "2022-02-07T20:58:03.895175352Z"
