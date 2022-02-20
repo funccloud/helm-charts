@@ -3,6 +3,16 @@ entries:
   cert-manager-config:
   - apiVersion: v2
     appVersion: 0.2.0
+    created: "2022-02-20T02:24:04.671979792Z"
+    description: A cert-manager-configurator
+    digest: 7e0b171a7af5ccca22944bdc80d0a6a4cbd3e15747309c4ceb33ad92beafa687
+    name: cert-manager-config
+    type: application
+    urls:
+    - https://github.com/funccloud/helm-charts/releases/download/cert-manager-config-0.2.1/cert-manager-config-0.2.1.tgz
+    version: 0.2.1
+  - apiVersion: v2
+    appVersion: 0.2.0
     created: "2022-02-20T01:58:17.2728081Z"
     description: A cert-manager-configurator
     digest: b5b12fd3aae603ff1d69981028fb9d2e0369417e6264714d08932d2c6f2a4e24
@@ -227,4 +237,4 @@ entries:
     urls:
     - https://github.com/funccloud/helm-charts/releases/download/kong-2.6.4/kong-2.6.4.tgz
     version: 2.6.4
-generated: "2022-02-20T01:58:17.272866002Z"
+generated: "2022-02-20T02:24:04.672457604Z"
