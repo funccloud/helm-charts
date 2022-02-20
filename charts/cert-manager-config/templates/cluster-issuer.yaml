@@ -15,5 +15,4 @@ spec:
           digitalocean:
             tokenSecretRef:
               name: {{.Values.secret.name}}
-              namespace: {{.Values.secret.namespace}}
               key: {{.Values.secret.key}}
