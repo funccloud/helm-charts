@@ -237,4 +237,30 @@ entries:
     urls:
     - https://github.com/funccloud/helm-charts/releases/download/kong-2.6.4/kong-2.6.4.tgz
     version: 2.6.4
-generated: "2022-02-20T02:24:04.672457604Z"
+  stackgres-cluster:
+  - apiVersion: v2
+    appVersion: 1.1.0
+    created: "2022-02-21T21:43:00.14930154Z"
+    description: StackGres Cluster
+    digest: 93ede9668d60dd100f48d1d194c9a7f207f806571594739a9c8971cc0f2c1a0b
+    home: https://stackgres.io
+    icon: https://assets.gitlab-static.net/uploads/-/system/project/avatar/12584701/logo-stackgres.png?width=64
+    keywords:
+    - stackgres
+    - postgresql
+    - postgres
+    - cluster
+    - stack
+    - opinionated
+    kubeVersion: 1.16.0-0 - 1.23.x-0
+    maintainers:
+    - email: info@ongres.com
+      name: OnGres Inc.
+      url: https://ongres.com
+    name: stackgres-cluster
+    sources:
+    - https://gitlab.com/ongresinc/stackgres
+    urls:
+    - https://github.com/funccloud/helm-charts/releases/download/stackgres-cluster-1.1.0/stackgres-cluster-1.1.0.tgz
+    version: 1.1.0
+generated: "2022-02-21T21:43:00.149328042Z"
