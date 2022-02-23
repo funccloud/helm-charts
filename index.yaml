@@ -2,6 +2,16 @@ apiVersion: v1
 entries:
   cert-manager-config:
   - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2022-02-23T02:50:32.093628459Z"
+    description: A cert-manager-configurator
+    digest: c626b96d7d3a47c8c767696370bfd323982be2b0538189ea8702b4bf6260f3ab
+    name: cert-manager-config
+    type: application
+    urls:
+    - https://github.com/funccloud/helm-charts/releases/download/cert-manager-config-0.3.0/cert-manager-config-0.3.0.tgz
+    version: 0.3.0
+  - apiVersion: v2
     appVersion: 0.2.0
     created: "2022-02-20T02:24:04.671979792Z"
     description: A cert-manager-configurator
@@ -263,4 +273,4 @@ entries:
     urls:
     - https://github.com/funccloud/helm-charts/releases/download/stackgres-cluster-1.1.0/stackgres-cluster-1.1.0.tgz
     version: 1.1.0
-generated: "2022-02-21T21:43:00.149328042Z"
+generated: "2022-02-23T02:50:32.094010879Z"
