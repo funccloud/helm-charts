@@ -12,8 +12,5 @@ spec:
     solvers: 
       - 
         dns01: 
-          digitalocean:
-            tokenSecretRef:
-              name: {{.Values.secret.name}}
-              namespace: {{.Values.secret.namespace}}
-              key: {{.Values.secret.key}}
+          cloudDNS: 
+            project: {{.Values.projectID}}
