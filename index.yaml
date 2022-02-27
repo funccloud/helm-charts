@@ -228,6 +228,27 @@ entries:
   kong:
   - apiVersion: v1
     appVersion: "2.7"
+    created: "2022-02-27T23:07:56.660289832Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: ""
+      version: 8.6.8
+    description: The Cloud-Native Ingress and API-management
+    digest: 44783db46ab02e0a1dafefc4ea56d3155ac762af866b62bd477f5b5ee38a920b
+    home: https://konghq.com/
+    icon: https://s3.amazonaws.com/downloads.kong/universe/assets/icon-kong-inc-large.png
+    maintainers:
+    - email: harry@konghq.com
+      name: hbagdi
+    - email: traines@konghq.com
+      name: rainest
+    name: kong
+    urls:
+    - https://github.com/funccloud/helm-charts/releases/download/kong-2.6.5/kong-2.6.5.tgz
+    version: 2.6.5
+  - apiVersion: v1
+    appVersion: "2.7"
     created: "2022-02-07T20:58:03.89488405Z"
     dependencies:
     - condition: postgresql.enabled
@@ -273,4 +294,4 @@ entries:
     urls:
     - https://github.com/funccloud/helm-charts/releases/download/stackgres-cluster-1.1.0/stackgres-cluster-1.1.0.tgz
     version: 1.1.0
-generated: "2022-02-23T02:50:32.094010879Z"
+generated: "2022-02-27T23:07:56.660334635Z"
