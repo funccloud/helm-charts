@@ -775,7 +775,7 @@ the template that it itself is using form the above sections.
   {{- $_ := set $autoEnv "KONG_DECLARATIVE_CONFIG" "/kong_dbless/kong.yml" -}}
 {{- end }}
 
-# {{- $_ := set $autoEnv "KONG_PLUGINS" (include "kong.plugins" .) -}} it will be on your image
+# {{- $_ := set $autoEnv "KONG_PLUGINS" (include "kong.plugins" .) -}} it will be on your image#
 
 {{/*
     ====== USER-SET ENVIRONMENT VARIABLES ======
