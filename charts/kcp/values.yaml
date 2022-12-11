@@ -1,0 +1,80 @@
+externalHostname: "kcp.127.0.0.1.nip.io"
+etcd:
+  enabled: true
+  image: quay.io/coreos/etcd
+  tag: v3.5.4
+  memoryLimit: 4Gi
+  volumeSize: 8Gi
+  profiling:
+    enabled: false
+kcp:
+  image: registry.ci.openshift.org/kcp/kcp
+  tag: latest
+  v: "4"
+  memoryLimit: 20Gi
+  cpuRequest: 500m
+  memoryRequest: 4Gi
+  etcd:
+    serverAddress: https://etcd:2379
+    clientCertificate:
+      issuer: etcd-client-issuer
+      commonName: root
+  volumeSize: 1Gi
+  volumeClassName: ""
+  extraFlags: [] # Format is raw flag, e.g. --virtual-server-url=https://abc.xyz:443
+  profiling:
+    enabled: false
+    port: 6060
+kcpFrontProxy:
+  image: registry.ci.openshift.org/kcp/kcp-front-proxy
+  tag: latest
+  v: "4"
+  openshiftRoute:
+    enabled: false
+  ingress:
+    enabled: false
+    annotations: {}
+    secret: ""
+  gateway:
+    enabled: false
+    className: ""
+  certificate:
+    issuerSpec: {}
+  profiling:
+    enabled: false
+    port: 6060
+virtualWorkspaces:
+  image: registry.ci.openshift.org/kcp/virtual-workspaces
+  tag: latest
+  memoryLimit: 10Gi
+  cpuRequest: 100m
+  memoryRequest: 2Gi
+  profiling:
+    enabled: false
+    port: 6061
+audit:
+  enabled: true
+  volumeSize: 1Gi
+  volumeClassName: ""
+  policy:
+    dir: /etc/kcp/audit
+    fileName: audit-policy.yml
+    config: |
+      # Log all requests at the Metadata level.
+      apiVersion: audit.k8s.io/v1
+      kind: Policy
+      rules:
+      - level: Metadata
+  log:
+    maxAge: "10"
+    maxSize: "250"
+    maxBackup: "1"
+    dir: /var/audit
+certificates:
+  privateKeys:
+    algorithm: RSA
+    size: 2048
+  subject: {}
+oidc: {}
+githubUserEditAccess:
+  - test
