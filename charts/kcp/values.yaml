@@ -1,9 +1,10 @@
-externalHostname: "kcp.127.0.0.1.nip.io"
+externalHostname: ""
 etcd:
   enabled: true
   image: quay.io/coreos/etcd
   tag: v3.5.4
-  memoryLimit: 4Gi
+  cpuLimit: "1"
+  memoryLimit: 2Gi
   volumeSize: 8Gi
   profiling:
     enabled: false
@@ -11,9 +12,10 @@ kcp:
   image: registry.ci.openshift.org/kcp/kcp
   tag: latest
   v: "4"
-  memoryLimit: 20Gi
+  cpuLimit: "1"
+  memoryLimit: 2Gi
   cpuRequest: 500m
-  memoryRequest: 4Gi
+  memoryRequest: 1Gi
   etcd:
     serverAddress: https://etcd:2379
     clientCertificate:
@@ -39,16 +41,18 @@ kcpFrontProxy:
     enabled: false
     className: ""
   certificate:
-    issuerSpec: {}
+    issuerSpec:
+      selfSigned: {}
   profiling:
     enabled: false
     port: 6060
 virtualWorkspaces:
   image: registry.ci.openshift.org/kcp/virtual-workspaces
   tag: latest
-  memoryLimit: 10Gi
+  cpuLimit: 200m
+  memoryLimit: 1Gi
   cpuRequest: 100m
-  memoryRequest: 2Gi
+  memoryRequest: 256Mi
   profiling:
     enabled: false
     port: 6061
