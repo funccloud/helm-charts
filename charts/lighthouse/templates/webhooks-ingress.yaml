@@ -17,6 +17,11 @@ spec:
   {{- if semverCompare ">=1.18-0" .Capabilities.KubeVersion.Version }}
   ingressClassName: {{ .Values.webhooks.ingress.ingressClassName }}
   {{- end }}
+  tls:
+    - hosts:
+      {{- range .Values.webhooks.ingress.hosts }}
+        - {{ . | quote }}
+      {{- end }}
   rules:
   {{- range .Values.webhooks.ingress.hosts }}
   - host: {{ . | quote }}
