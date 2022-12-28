@@ -22,6 +22,7 @@ spec:
       {{- range .Values.webhooks.ingress.hosts }}
         - {{ . | quote }}
       {{- end }}
+      secretName: webhook-cert
   rules:
   {{- range .Values.webhooks.ingress.hosts }}
   - host: {{ . | quote }}
