@@ -9,8 +9,14 @@ spec:
     privateKeySecretRef: 
       name: letsencrypt-prod
     server: "https://acme-v02.api.letsencrypt.org/directory"
-    solvers: 
+    solvers:
+    {{ if .Values.projectID }} 
       - 
         dns01: 
           cloudDNS: 
             project: {{.Values.projectID}}
+    {{ end }}
+      - 
+        http01: 
+          ingress: 
+            class: {{.Values.ingressClass}}
