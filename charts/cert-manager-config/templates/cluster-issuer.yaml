@@ -11,12 +11,14 @@ spec:
     server: "https://acme-v02.api.letsencrypt.org/directory"
     solvers:
     {{ if .Values.projectID }} 
-      - 
-        dns01: 
+      - dns01:
           cloudDNS: 
             project: {{.Values.projectID}}
+        selector:
+          dnsZones:
+            - funccloud.com 
+            - funccloud.dev
     {{ end }}
-      - 
-        http01: 
+      - http01: 
           ingress: 
             class: {{.Values.ingressClass}}
