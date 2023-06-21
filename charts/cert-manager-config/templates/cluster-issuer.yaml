@@ -20,5 +20,8 @@ spec:
             - funccloud.dev
     {{ end }}
       - http01: 
-          ingress: 
-            class: {{.Values.ingressClass}}
+          gatewayHTTPRoute:
+            parentRefs:
+              - name: {{.Values.gateway.name}}
+                namespace: {{.Values.gateway.namespace}}
+                kind: Gateway
