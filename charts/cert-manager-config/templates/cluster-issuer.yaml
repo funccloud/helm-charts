@@ -17,6 +17,7 @@ spec:
         selector:
           dnsZones:
             - funccloud.com 
+            - funccloud.com.br 
             - funccloud.dev
     {{ end }}
       - http01: 
