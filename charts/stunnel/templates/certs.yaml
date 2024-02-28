@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: stunnel-certs
+  labels:
+    {{- include "stunnel.labels" . | nindent 4 }}
+type: Opaque
+data:
+  google.crt: {{ .Values.google.crt | b64enc }}
+  google.key: {{ .Values.google.key | b64enc }}

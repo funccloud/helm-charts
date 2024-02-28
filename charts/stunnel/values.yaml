@@ -91,6 +91,10 @@ volumeMounts:
   mountPath: "/ldap/certs"
   readOnly: true
 
+google:
+  crt: ""
+  key: ""
+
 nodeSelector: {}
 
 tolerations: []
