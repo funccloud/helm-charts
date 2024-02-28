@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "stunnel.fullname" . }}
+  labels:
+    {{- include "stunnel.labels" . | nindent 4 }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: ldap
+      protocol: TCP
+      name: ldap
+  selector:
+    {{- include "stunnel.selectorLabels" . | nindent 4 }}
