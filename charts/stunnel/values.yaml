@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: funccloud/stunnel-google-ldap
+  repository: git.funccloud.dev/funccloud/stunnel-google-ldap
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: ""
