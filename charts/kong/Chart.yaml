@@ -9,4 +9,4 @@ maintainers:
 - email: traines@konghq.com
   name: rainest
 name: kong
-version: 2.6.5
+version: 2.6.6

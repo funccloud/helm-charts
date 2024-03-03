@@ -5,4 +5,4 @@ description:
   on many clusters
 name: kcp
 type: application
-version: 0.2.5
+version: 0.2.6
