@@ -1,0 +1,130 @@
+apiVersion: v1
+entries:
+  cert-manager-config:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2024-03-14T00:00:14.663269624Z"
+    description: A cert-manager-configurator
+    digest: f556aecf32db692c816e32b0cf4456091fd583cdcc148e0f244f80d4217e2970
+    name: cert-manager-config
+    type: application
+    urls:
+    - https://github.com/funccloud/helm-charts/releases/download/cert-manager-config-0.9.1/cert-manager-config-0.9.1.tgz
+    version: 0.9.1
+  kcp:
+  - apiVersion: v2
+    appVersion: "0.9"
+    created: "2024-03-14T00:00:14.833292226Z"
+    description: A prototype of a multi-tenant Kubernetes control plane for workloads
+      on many clusters
+    digest: 13df3be3bcfa5b4e6b339ddf936b55e28ec2e632913592e982db440ccd28cccd
+    name: kcp
+    type: application
+    urls:
+    - https://github.com/funccloud/helm-charts/releases/download/kcp-0.2.6/kcp-0.2.6.tgz
+    version: 0.2.6
+  keycloak:
+  - apiVersion: v2
+    appVersion: 16.1.0
+    created: "2024-03-14T00:00:14.990263623Z"
+    description: Open Source Identity and Access Management For Modern Applications
+      and Services
+    digest: 48272b5a857980064c365964fbd1c648911bf9c744f1fe73b607477d79c5d49e
+    home: https://www.keycloak.org/
+    icon: https://www.keycloak.org/resources/images/keycloak_logo_480x108.png
+    keywords:
+    - sso
+    - idm
+    - openid connect
+    - saml
+    - kerberos
+    - ldap
+    maintainers:
+    - email: fpo@felipeweb.dev
+      name: felipeweb
+    name: keycloak
+    urls:
+    - https://github.com/funccloud/helm-charts/releases/download/keycloak-0.1.6/keycloak-0.1.6.tgz
+    version: 0.1.6
+  keycloak-operator:
+  - apiVersion: v2
+    appVersion: 16.1.0
+    created: "2024-03-14T00:00:15.166185704Z"
+    description: Deploy keycloak-operator without OLM
+    digest: 80eae18be2abc2bafe72cdc32cf5b3d39f28325a33b028799876dbe3ffbb6d97
+    name: keycloak-operator
+    type: application
+    urls:
+    - https://github.com/funccloud/helm-charts/releases/download/keycloak-operator-0.1.2/keycloak-operator-0.1.2.tgz
+    version: 0.1.2
+  kong:
+  - apiVersion: v1
+    appVersion: "2.7"
+    created: "2024-03-14T00:00:15.360188391Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: ""
+      version: 8.6.8
+    description: The Cloud-Native Ingress and API-management
+    digest: 08590d592b5c47a2e1056934cf5efb2468c9e87eeeaf331fdb78b506b065e74e
+    home: https://konghq.com/
+    icon: https://s3.amazonaws.com/downloads.kong/universe/assets/icon-kong-inc-large.png
+    maintainers:
+    - email: harry@konghq.com
+      name: hbagdi
+    - email: traines@konghq.com
+      name: rainest
+    name: kong
+    urls:
+    - https://github.com/funccloud/helm-charts/releases/download/kong-2.6.6/kong-2.6.6.tgz
+    version: 2.6.6
+  lighthouse:
+  - apiVersion: v1
+    created: "2024-03-14T00:00:15.535996783Z"
+    description: 'This chart bootstraps installation of [Lighthouse](https://github.com/jenkins-x/lighthouse). '
+    digest: 54b23d19b39900189ed286b48db306dd56f0cb84dd7e10d6a57d8bbc6b473a68
+    home: https://github.com/jenkins-x/lighthouse
+    icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
+    name: lighthouse
+    urls:
+    - https://github.com/funccloud/helm-charts/releases/download/lighthouse-0.1.2/lighthouse-0.1.2.tgz
+    version: 0.1.2
+  stackgres-cluster:
+  - apiVersion: v2
+    appVersion: 1.1.0
+    created: "2024-03-14T00:00:15.683468216Z"
+    description: StackGres Cluster
+    digest: 6db027978cff772bd0c96d0395ac04b5081c1c26c323c771069b74422dbc4fa3
+    home: https://stackgres.io
+    icon: https://assets.gitlab-static.net/uploads/-/system/project/avatar/12584701/logo-stackgres.png?width=64
+    keywords:
+    - stackgres
+    - postgresql
+    - postgres
+    - cluster
+    - stack
+    - opinionated
+    kubeVersion: 1.16.0-0 - 1.23.x-0
+    maintainers:
+    - email: info@ongres.com
+      name: OnGres Inc.
+      url: https://ongres.com
+    name: stackgres-cluster
+    sources:
+    - https://gitlab.com/ongresinc/stackgres
+    urls:
+    - https://github.com/funccloud/helm-charts/releases/download/stackgres-cluster-1.1.2/stackgres-cluster-1.1.2.tgz
+    version: 1.1.2
+  stunnel:
+  - apiVersion: v2
+    appVersion: v2.0.0
+    created: "2024-03-14T00:00:15.868563674Z"
+    description: A Helm chart for Kubernetes
+    digest: d4d28b91617ab3ebdfa7190082872e542e73023dfb467534f43749fa612dc81e
+    name: stunnel
+    type: application
+    urls:
+    - https://github.com/funccloud/helm-charts/releases/download/stunnel-1.1.2/stunnel-1.1.2.tgz
+    version: 1.1.2
+generated: "2024-03-14T00:00:15.868570957Z"
